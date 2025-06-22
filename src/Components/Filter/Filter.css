@@ -1,0 +1,49 @@
+.filter-section {
+  font-family: sans-serif;
+  padding: 8px 0;
+}
+
+.filter-section .filter-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 8px 0;
+  font-family: Simplon Norm;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.filter-section .filter-content {
+  padding: 0 4px 8px 0;
+}
+
+.filter-content .filter-subtitle {
+  font-size: 14px;
+  color: #555;
+  margin: 24px 0;
+}
+
+.filter-content .unselect {
+  font-size: 12px;
+  color: #7f9ca6;
+  cursor: pointer;
+  margin: 24px 0;
+  text-decoration: underline;
+}
+
+.filter-content .checkbox-label {
+  display: block;
+  font-family: Simplon Norm;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  margin: 24px 0px;
+}
+
+.filter-content input {
+  margin-right: 8px;
+}

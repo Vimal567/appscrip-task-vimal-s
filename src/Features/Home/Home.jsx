@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "../../Components/Header/Header";
 import "./Home.css";
 import Dropdown from "../../Components/Dropdown/Dropdown";
+import Filter from "../../Components/Filter/Filter";
 
 const Home = () => {
   const sortOptions = [
@@ -14,7 +15,7 @@ const Home = () => {
 
 
   const [selectedSortOption, setSelectedSortOption] = useState({ value: "Recommended", label: "RECOMMENDED" });
-  const [showFilter, setShowFilter] = useState(true);
+  const [showFilter, setShowFilter] = useState(false);
 
   return (
     <div className="home-section">
@@ -71,6 +72,25 @@ const Home = () => {
             onSelect={setSelectedSortOption}
           />
         </span>
+      </section>
+
+      {/* Dashboard section */}
+      <section className={`dashboard-section ${showFilter ? "grid-section" : ""}`}>
+        <div className={`filter-menu ${showFilter ? "show" : "hide"}`}>
+          <label>
+            <input type="checkbox" /> CUSTOMIZABLE
+          </label>
+          <hr />
+          <Filter title="Ideal For" options={["Men", "Women", "Baby & Kids"]} />
+          <Filter title="Occasion" options={["Casual", "Party", "Wedding"]} />
+          <Filter title="Work" options={["Office", "Remote", "Field"]} />
+          <Filter title="Fabric" options={["Cotton", "Linen", "Wool"]} />
+          <Filter title="Segment" options={["Luxury", "Budget", "Premium"]} />
+          <Filter title="Suitable For" options={["Summer", "Winter", "Rainy"]} />
+          <Filter title="Raw Materials" options={["Natural", "Synthetic"]} />
+          <Filter title="Pattern" options={["Striped", "Plain", "Printed"]} />
+        </div>
+        <div className="products-section"></div>
       </section>
     </div>
   )

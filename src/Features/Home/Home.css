@@ -29,8 +29,52 @@
   margin-top: 16px;
 }
 
+.home-section .filter-action-desktop {
+  padding: 24px 96px;
+  margin-top: 72px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #e5e5e5;
+}
+
+.filter-action-desktop .filter-action-container {
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.filter-action-container .product-count {
+  font-family: Simplon Norm;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0px;
+  margin-right: 80px;
+}
+
+.filter-action-container .filter-toggle {
+  font-family: Adobe Caslon Pro;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: right;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-offset: 0%;
+  text-decoration-thickness: 0%;
+  color: #888792;
+  cursor: pointer;
+}
+
+.filter-action-container .filter-toggle img {
+  margin-right: 8px;
+}
+
+.home-section .filter-action-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 710px) {
-  .home-section {
+  .home-section .filter-action-desktop {
+    padding: 16px;
   }
 }
 
@@ -48,5 +92,35 @@
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0px;
+  }
+
+  .home-section .filter-action-desktop {
+    display: none;
+  }
+
+  .home-section .filter-action-mobile {
+    display: grid;
+    grid-template-columns: 40% 10% 40%;
+    align-items: center;
+    border: 1px solid #e5e5e5;
+    padding: 12px 0px;
+    font-family: Simplon Norm;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    margin-top: 16px;
+  }
+
+  .home-section .filter-action-mobile span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-section .filter-action-mobile .divider {
+    font-weight: bolder;
+    color: #E5E5E5;
   }
 }

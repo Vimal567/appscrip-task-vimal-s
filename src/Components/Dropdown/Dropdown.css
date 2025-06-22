@@ -48,6 +48,7 @@
   font-size: 14px;
   cursor: pointer;
   color: #333;
+  text-align: end;
 }
 
 .dropdown-item:hover {

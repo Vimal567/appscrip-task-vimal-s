@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FFFFFF;
+}
+
+.page-wrapper {
+  margin-top: 3rem;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: none;
+  padding: 5px 10px 5px 10px;
+  border-radius: 20px;
+}
+
+.no-data {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(16, 124, 16);
+}

@@ -17,6 +17,7 @@
   line-height: 100%;
   letter-spacing: 1px;
   vertical-align: middle;
+  margin-left: 8%;
 }
 
 .header-container .actions-container {
@@ -72,6 +73,11 @@
 @media screen and (max-width: 710px) {
   .header-section .header-container {
     padding: 16px;
+  }
+
+  .header-container .actions-container > img {
+    margin-right: 10px;
+    cursor: pointer;
   }
 }
 

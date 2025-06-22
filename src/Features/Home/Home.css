@@ -73,7 +73,8 @@
 }
 
 .home-section .dashboard-section {
-  display: flex;
+  display: block;
+  padding: 24px 96px;
 }
 
 .home-section .dashboard-section.grid-section {
@@ -108,6 +109,13 @@
 
 .filter-menu.hide {
   display: none;
+}
+
+.products-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  place-items: center;
 }
 
 @media screen and (max-width: 710px) {
@@ -168,5 +176,19 @@
   .home-section .filter-action-mobile .divider {
     font-weight: bolder;
     color: #e5e5e5;
+  }
+
+  .home-section .dashboard-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .home-section .dashboard-section.grid-section {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .filter-menu.show {
+    display: none;
   }
 }

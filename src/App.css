@@ -9,19 +9,7 @@ body {
   background-color: #FFFFFF;
 }
 
-.page-wrapper {
-  margin-top: 3rem;
-}
-
-button {
-  border: none;
-  cursor: pointer;
-  background-color: none;
-  padding: 5px 10px 5px 10px;
-  border-radius: 20px;
-}
-
-.no-data {
+.loading {
   height: 75vh;
   display: flex;
   justify-content: center;

@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "../../Components/Header/Header";
 import "./Home.css";
 import Dropdown from "../../Components/Dropdown/Dropdown";
 import Filter from "../../Components/Filter/Filter";
+import ProductCard from "../../Components/ProductCard/ProductCard";
 
 const Home = () => {
   const sortOptions = [
@@ -16,6 +17,27 @@ const Home = () => {
 
   const [selectedSortOption, setSelectedSortOption] = useState({ value: "Recommended", label: "RECOMMENDED" });
   const [showFilter, setShowFilter] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    // Fetch data on component mount
+    fetch("https://fakestoreapi.com/products")
+      .then((res) => res.json())
+      .then((data) => {
+        const fetchedProducts = data.map((item, index) => {
+          //add stock manually for mock
+          return { ...item, stock: index }
+        })
+        setProducts(fetchedProducts)
+        console.log(fetchedProducts)
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error fetching users:", error);
+        setLoading(false);
+      });
+  }, []);
 
   return (
     <div className="home-section">
@@ -35,7 +57,7 @@ const Home = () => {
       {/* Filter action desktop view */}
       <section className="filter-action-desktop">
         <span className="filter-action-container">
-          <span className="product-count">3425 Items</span>
+          <span className="product-count">{products.length} Items</span>
           <span className="filter-toggle">
             {showFilter ?
               <span onClick={() => setShowFilter(false)}>
@@ -76,6 +98,7 @@ const Home = () => {
 
       {/* Dashboard section */}
       <section className={`dashboard-section ${showFilter ? "grid-section" : ""}`}>
+        {/* Filter section */}
         <div className={`filter-menu ${showFilter ? "show" : "hide"}`}>
           <label>
             <input type="checkbox" /> CUSTOMIZABLE
@@ -90,7 +113,13 @@ const Home = () => {
           <Filter title="Raw Materials" options={["Natural", "Synthetic"]} />
           <Filter title="Pattern" options={["Striped", "Plain", "Printed"]} />
         </div>
-        <div className="products-section"></div>
+        {/* Products section */}
+        {loading ? <div className="loading">Loading please wait...</div> :
+          <div className="products-section">
+            {products.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>}
       </section>
     </div>
   )

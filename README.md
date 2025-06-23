@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Appscrip-task-vimal-s
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the implementation of the **Product Listing Page (PLP)** as per the design shared via Figma. The project is built using **React.js** and styled with **CSS**. The layout is responsive and optimized for desktop, tablet, and mobile views.
 
-## Available Scripts
+## 🌐 Live Demo
 
-In the project directory, you can run:
+Access the live version of this project on Netlify:
 
-### `npm start`
+🔗 [Live Demo](https://appscrip-vimal-s.netlify.app)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Visuals
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Here’s a screenshot of the Timer App:
 
-### `npm test`
+![Home Page Screenshot](https://github.com/user-attachments/assets/99431001-e406-404f-9ffb-ea840fe52aed)
+![Footer Screenshot](https://github.com/user-attachments/assets/ce61a407-425a-41a9-8ffe-23cc4d584660)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **React.js** (SPA)
+- **CSS** (custom)
+- **Axios** (for API)
+- **FakeStoreAPI** for mock product data
+- **Netlify** for deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ✅ Features
 
-### `npm run eject`
+- Fully responsive product listing
+- Filters (mocked, not functional)
+- Product grid with image, title, price
+- Hover effects and wishlist icon
+- SEO optimized (title, meta description, alt texts)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  Node.js and npm installed (check with `node -v` and `npm -v`).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Setup Instructions
 
-## Learn More
+1. Clone this repository:
+    ```bash
+    git clone https://github.com/Vimal567/appscrip-task-vimal-s.git
+    cd Appscrip-task-vimal-s
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. Start the app:
+    ```bash
+    npm start
+    ```
+---

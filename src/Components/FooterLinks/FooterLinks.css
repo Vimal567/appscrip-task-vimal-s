@@ -1,0 +1,39 @@
+.footer-section-header img {
+  width: 21px;
+  height: 13.19px;
+  transition: ease-in 0.1s;
+}
+
+.footer-section-header img.open {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+  .footer-dropdown {
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 24px;
+  }
+
+  .footer-dropdown .footer-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    cursor: pointer;
+  }
+  .footer-dropdown .footer-section-header h4 {
+    font-family: Simplon Norm;
+    font-weight: 700;
+    font-size: 16px !important;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+  }
+  .footer-dropdown .footer-section-body li {
+    font-family: Simplon Norm;
+    font-weight: 700;
+    font-size: 16px !important;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+  }
+}

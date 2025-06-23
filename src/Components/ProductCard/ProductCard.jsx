@@ -25,7 +25,7 @@ const ProductCard = ({ product }) => {
           <span>
             <a href="/">Sign in</a> or Create an account to see pricing
           </span>
-          <span className={`wishlist ${isLiked ? "liked" : ""}`} onClick={toggleLike}>
+          <span role="button" className={`wishlist ${isLiked ? "liked" : ""}`} onClick={toggleLike}>
             {isLiked ? "♥" : "♡"}
           </span>
 

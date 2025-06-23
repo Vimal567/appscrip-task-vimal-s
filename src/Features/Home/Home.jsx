@@ -4,6 +4,7 @@ import "./Home.css";
 import Dropdown from "../../Components/Dropdown/Dropdown";
 import Filter from "../../Components/Filter/Filter";
 import ProductCard from "../../Components/ProductCard/ProductCard";
+import Footer from "../../Components/Footer/Footer";
 
 const Home = () => {
   const sortOptions = [
@@ -30,7 +31,7 @@ const Home = () => {
           return { ...item, stock: index }
         })
         setProducts(fetchedProducts)
-        console.log(fetchedProducts)
+        // console.log(fetchedProducts)
         setLoading(false);
       })
       .catch((error) => {
@@ -121,6 +122,9 @@ const Home = () => {
             ))}
           </div>}
       </section>
+
+      {/* Footer section */}
+      <Footer />
     </div>
   )
 }

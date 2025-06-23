@@ -17,7 +17,7 @@ const Header = () => {
   const [selectedTab, setSelectedTab] = useState("Shop");
 
   return (
-    <div className='header-section'>
+    <header className='header-section'>
       {/* Header main actions */}
       <div className="header-container">
         <img src="assets/toggle-icon.png" alt="toggle" className='toggle' />
@@ -50,7 +50,7 @@ const Header = () => {
         <span>HOME | </span>
         <span className='selected'>{selectedTab}</span>
       </div>
-    </div>
+    </header>
   )
 }
 
